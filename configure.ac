@@ -46,5 +46,5 @@ AC_TRY_LINK([
 AC_DEFINE(HAVE_FULL_QUEUE_H,, Define if sys/queue.h includes required macros)
 ])
 
-AC_CONFIG_FILES([Makefile src/Makefile man/Makefile])
+AC_CONFIG_FILES([Makefile src/Makefile man/Makefile test/Makefile])
 AC_OUTPUT
