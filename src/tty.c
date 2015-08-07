@@ -50,6 +50,7 @@ tty_init(int use_alternate_screen)
 		err(1, "fopen");
 	}
 
+	setbuf(tty_out, NULL);
 	setupterm((char *)0, fileno(tty_out), (int *)0);
 
 	if (using_alternate_screen) {
