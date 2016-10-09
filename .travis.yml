@@ -2,8 +2,8 @@ language: c
 
 sudo: required
 
-before_install:
-sudo apt-get update autoconf
+before_install: 
+- sudo apt-get install autoconf
 
 
 install: ./autogen.sh && ./configure && make && make install
